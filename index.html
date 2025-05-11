@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitality Hub | Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Vitality Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="fitness.html">Fitness</a></li>
+                    <li><a href="healthy-living.html">Healthy Living</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle">Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Your Journey to Better Health Starts Here</h2>
+            <p>Discover recipes, workouts, and lifestyle tips to transform your wellbeing.</p>
+            <a href="#featured" class="btn">Explore</a>
+        </section>
+
+        <section id="featured" class="featured-posts">
+            <h2>Featured Posts</h2>
+            <div class="posts-grid">
+                <article class="post-card">
+                    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061" alt="Healthy meal">
+                    <h3><a href="food.html">5 Superfood Smoothie Recipes</a></h3>
+                    <p>Boost your morning with these nutrient-packed smoothies that take just minutes to make.</p>
+                    <a href="food.html" class="read-more">Read More</a>
+                </article>
+                
+                <article class="post-card">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="Woman exercising">
+                    <h3><a href="fitness.html">Home Workout Routine</a></h3>
+                    <p>No gym? No problem! This 30-minute routine requires no equipment and burns major calories.</p>
+                    <a href="fitness.html" class="read-more">Read More</a>
+                </article>
+                
+                <article class="post-card">
+                    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352" alt="Meditation">
+                    <h3><a href="healthy-living.html">Mindfulness for Beginners</a></h3>
+                    <p>Reduce stress and improve focus with these simple mindfulness techniques anyone can try.</p>
+                    <a href="healthy-living.html" class="read-more">Read More</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2>Join Our Community</h2>
+            <p>Subscribe to get weekly health tips and exclusive content</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+            <p id="form-feedback"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Vitality Hub. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

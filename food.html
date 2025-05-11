@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitality Hub | Food</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Vitality Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="food.html" class="active">Food</a></li>
+                    <li><a href="fitness.html">Fitness</a></li>
+                    <li><a href="healthy-living.html">Healthy Living</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle">Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h2>Food & Nutrition</h2>
+            <p>Discover delicious recipes and nutrition tips to fuel your body right</p>
+        </section>
+
+        <section class="blog-content">
+            <article class="blog-post">
+                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061" alt="Smoothie bowls">
+                <div class="post-content">
+                    <h3>5 Superfood Smoothie Recipes</h3>
+                    <div class="post-meta">
+                        <span class="date">June 15, 2023</span>
+                        <span class="author">By Chef Maria</span>
+                    </div>
+                    <p>Starting your day with a nutrient-packed smoothie can boost your energy levels and provide essential vitamins. Here are five of our favorite combinations:</p>
+                    
+                    <h4>1. Green Powerhouse</h4>
+                    <ul>
+                        <li>1 cup spinach</li>
+                        <li>1 banana</li>
+                        <li>1 tbsp almond butter</li>
+                        <li>1 cup almond milk</li>
+                        <li>1 tsp chia seeds</li>
+                    </ul>
+                    
+                    <h4>2. Berry Antioxidant Blast</h4>
+                    <ul>
+                        <li>1 cup mixed berries</li>
+                        <li>1/2 cup Greek yogurt</li>
+                        <li>1 tbsp honey</li>
+                        <li>1 cup coconut water</li>
+                        <li>1 tsp flaxseeds</li>
+                    </ul>
+                    
+                    <button class="save-recipe" data-postid="1">Save Recipe</button>
+                    <span id="save-status-1"></span>
+                </div>
+            </article>
+
+            <article class="blog-post">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Healthy meal">
+                <div class="post-content">
+                    <h3>Meal Prep Like a Pro</h3>
+                    <div class="post-meta">
+                        <span class="date">June 8, 2023</span>
+                        <span class="author">By Nutritionist Tom</span>
+                    </div>
+                    <p>Meal prepping can save you time, money, and help you stick to your health goals. Here's our step-by-step guide:</p>
+                    
+                    <ol>
+                        <li>Plan your meals for the week</li>
+                        <li>Make a detailed shopping list</li>
+                        <li>Dedicate 2-3 hours on your prep day</li>
+                        <li>Cook proteins in bulk</li>
+                        <li>Pre-cut vegetables</li>
+                        <li>Portion everything into containers</li>
+                    </ol>
+                    
+                    <p>Pro tip: Invest in good quality glass containers that can go from fridge to microwave.</p>
+                    
+                    <button class="save-recipe" data-postid="2">Save Recipe</button>
+                    <span id="save-status-2"></span>
+                </div>
+            </article>
+        </section>
+
+        <aside class="sidebar">
+            <div class="search-box">
+                <input type="text" placeholder="Search recipes...">
+                <button>Search</button>
+            </div>
+            
+            <div class="popular-posts">
+                <h4>Popular Recipes</h4>
+                <ul>
+                    <li><a href="#">Avocado Toast Variations</a></li>
+                    <li><a href="#">High-Protein Vegetarian Meals</a></li>
+                    <li><a href="#">Sugar-Free Desserts</a></li>
+                    <li><a href="#">15-Minute Healthy Dinners</a></li>
+                </ul>
+            </div>
+            
+            <div class="nutrition-tip">
+                <h4>Nutrition Tip of the Day</h4>
+                <p>Add a handful of spinach to your smoothies - you won't taste it but you'll get a boost of iron and vitamin K!</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Vitality Hub. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

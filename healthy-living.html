@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitality Hub | Healthy Living</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Vitality Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="fitness.html">Fitness</a></li>
+                    <li><a href="healthy-living.html" class="active">Healthy Living</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle">Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h2>Healthy Living</h2>
+            <p>Mindfulness, sleep, and lifestyle tips for holistic wellbeing</p>
+        </section>
+
+        <section class="blog-content">
+            <article class="blog-post">
+                <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352" alt="Meditation">
+                <div class="post-content">
+                    <h3>Mindfulness for Beginners</h3>
+                    <div class="post-meta">
+                        <span class="date">June 18, 2023</span>
+                        <span class="author">By Wellness Coach Sarah</span>
+                    </div>
+                    <p>Mindfulness can reduce stress, improve focus, and enhance emotional regulation. Here's how to get started with simple practices:</p>
+                    
+                    <h4>1. The 5-Minute Breathing Exercise</h4>
+                    <ol>
+                        <li>Find a quiet space and sit comfortably</li>
+                        <li>Close your eyes and focus on your breath</li>
+                        <li>Notice the sensation of air entering and leaving your nostrils</li>
+                        <li>When your mind wanders (it will!), gently bring focus back to your breath</li>
+                        <li>Set a timer for 5 minutes</li>
+                    </ol>
+                    
+                    <h4>2. Mindful Eating</h4>
+                    <p>Try this with one meal this week:</p>
+                    <ul>
+                        <li>Before eating, observe your food's colors and smells</li>
+                        <li>Take small bites and chew slowly</li>
+                        <li>Notice textures and flavors</li>
+                        <li>Put your fork down between bites</li>
+                    </ul>
+                    
+                    <div class="meditation-tracker">
+                        <h4>Track Your Practice</h4>
+                        <label for="meditation-time">Today's meditation (minutes):</label>
+                        <input type="number" id="meditation-time" min="1" value="5">
+                        <button id="log-meditation">Log Session</button>
+                        <div id="meditation-stats"></div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-post">
+                <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597" alt="Sleeping woman">
+                <div class="post-content">
+                    <h3>Sleep Hygiene: 10 Tips for Better Rest</h3>
+                    <div class="post-meta">
+                        <span class="date">May 3, 2025</span>
+                        <span class="author">By Sleep Specialist Dr. Lee</span>
+                    </div>
+                    <p>Quality sleep is foundational to health. Implement these evidence-based strategies to improve your sleep:</p>
+                    
+                    <ol>
+                        <li><strong>Consistent Schedule:</strong> Go to bed and wake up at the same time daily</li>
+                        <li><strong>Blue Light Reduction:</strong> Avoid screens 1 hour before bed</li>
+                        <li><strong>Bedroom Environment:</strong> Keep room cool (60-67°F), dark, and quiet</li>
+                        <li><strong>Caffeine Cutoff:</strong> No caffeine after 2pm</li>
+                        <li><strong>Wind Down Routine:</strong> Develop a 30-minute pre-sleep ritual</li>
+                        <li><strong>Daylight Exposure:</strong> Get morning sunlight to regulate circadian rhythm</li>
+                        <li><strong>Limit Naps:</strong> If you nap, keep it under 30 minutes</li>
+                        <li><strong>Exercise:</strong> Regular activity improves sleep (but not right before bed)</li>
+                        <li><strong>Mind Your Meals:</strong> Avoid heavy meals before bedtime</li>
+                        <li><strong>Stress Management:</strong> Practice relaxation techniques</li>
+                    </ol>
+                    
+                    <div class="sleep-calculator">
+                        <h4>Sleep Calculator</h4>
+                        <p>Find your ideal bedtime based on wake-up time:</p>
+                        <label for="wake-up-time">I want to wake up at:</label>
+                        <input type="time" id="wake-up-time" value="07:00">
+                        <button id="calculate-sleep">Calculate</button>
+                        <div id="sleep-times"></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <aside class="sidebar">
+            <div class="habit-tracker">
+                <h4>Daily Habit Tracker</h4>
+                <form id="habit-form">
+                    <div class="habit">
+                        <input type="checkbox" id="habit1" name="water">
+                        <label for="habit1">Drank 8 glasses of water</label>
+                    </div>
+                    <div class="habit">
+                        <input type="checkbox" id="habit2" name="exercise">
+                        <label for="habit2">30 minutes of exercise</label>
+                    </div>
+                    <div class="habit">
+                        <input type="checkbox" id="habit3" name="meditation">
+                        <label for="habit3">5+ minutes meditation</label>
+                    </div>
+                    <div class="habit">
+                        <input type="checkbox" id="habit4" name="sleep">
+                        <label for="habit4">7+ hours of sleep</label>
+                    </div>
+                    <button type="submit">Save Day</button>
+                </form>
+                <div id="habit-streaks"></div>
+            </div>
+            
+            <div class="quote-of-day">
+                <h4>Quote of the Day</h4>
+                <blockquote>
+                    "Health is a relationship between you and your body."
+                    <footer>- Terri Guillemets</footer>
+                </blockquote>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Vitality Hub. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitality Hub | Fitness</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Vitality Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="fitness.html" class="active">Fitness</a></li>
+                    <li><a href="healthy-living.html">Healthy Living</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle">Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h2>Fitness & Exercise</h2>
+            <p>Workout routines, training tips, and movement guides for all levels</p>
+        </section>
+
+        <section class="blog-content">
+            <article class="blog-post">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="Woman exercising">
+                <div class="post-content">
+                    <h3>Home Workout Routine (No Equipment)</h3>
+                    <div class="post-meta">
+                        <span class="date">June 12, 2023</span>
+                        <span class="author">By Trainer Jessica</span>
+                    </div>
+                    <p>You don't need a gym membership to get in great shape. This 30-minute routine can be done anywhere and targets all major muscle groups.</p>
+                    
+                    <h4>The Routine</h4>
+                    <p>Complete 3 rounds of the following circuit with 60 seconds rest between rounds:</p>
+                    
+                    <table>
+                        <tr>
+                            <th>Exercise</th>
+                            <th>Duration/Reps</th>
+                        </tr>
+                        <tr>
+                            <td>Jumping Jacks</td>
+                            <td>1 minute</td>
+                        </tr>
+                        <tr>
+                            <td>Bodyweight Squats</td>
+                            <td>15 reps</td>
+                        </tr>
+                        <tr>
+                            <td>Push-ups</td>
+                            <td>10-15 reps</td>
+                        </tr>
+                        <tr>
+                            <td>Plank</td>
+                            <td>30-60 seconds</td>
+                        </tr>
+                        <tr>
+                            <td>Lunges</td>
+                            <td>10 each leg</td>
+                        </tr>
+                    </table>
+                    
+                    <button class="save-workout" data-postid="3">Save Workout</button>
+                    <span id="save-status-3"></span>
+                </div>
+            </article>
+
+            <article class="blog-post">
+                <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c" alt="Running shoes">
+                <div class="post-content">
+                    <h3>5K Training Plan for Beginners</h3>
+                    <div class="post-meta">
+                        <span class="date">June 5, 2023</span>
+                        <span class="author">By Runner Mike</span>
+                    </div>
+                    <p>Ready to run your first 5K? This 8-week plan will gradually build your endurance without overwhelming you.</p>
+                    
+                    <h4>Week 1-2: Building a Base</h4>
+                    <ul>
+                        <li>Monday: 20 min walk/jog (1 min jog/2 min walk)</li>
+                        <li>Wednesday: 20 min walk/jog</li>
+                        <li>Friday: 25 min walk/jog</li>
+                        <li>Saturday: 30 min walk</li>
+                    </ul>
+                    
+                    <h4>Week 3-4: Increasing Endurance</h4>
+                    <ul>
+                        <li>Monday: 25 min jog/walk (2 min jog/1 min walk)</li>
+                        <li>Wednesday: 25 min jog/walk</li>
+                        <li>Friday: 30 min jog/walk</li>
+                        <li>Saturday: 35 min walk</li>
+                    </ul>
+                    
+                    <div class="progress-tracker">
+                        <h4>Track Your Progress</h4>
+                        <label for="run-distance">Today's distance (miles):</label>
+                        <input type="number" id="run-distance" min="0" step="0.1">
+                        <button id="log-run">Log Run</button>
+                        <div id="run-progress"></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <aside class="sidebar">
+            <div class="workout-calculator">
+                <h4>Calorie Burn Calculator</h4>
+                <form id="calorie-calculator">
+                    <label for="activity">Activity:</label>
+                    <select id="activity">
+                        <option value="running">Running</option>
+                        <option value="walking">Walking</option>
+                        <option value="cycling">Cycling</option>
+                        <option value="swimming">Swimming</option>
+                    </select>
+                    
+                    <label for="duration">Duration (minutes):</label>
+                    <input type="number" id="duration" min="1" value="30">
+                    
+                    <label for="weight">Your Weight (lbs):</label>
+                    <input type="number" id="weight" min="50" value="150">
+                    
+                    <button type="submit">Calculate</button>
+                </form>
+                <div id="calorie-result"></div>
+            </div>
+            
+            <div class="upcoming-events">
+                <h4>Upcoming Events</h4>
+                <ul>
+                    <li><strong>June 25:</strong> Virtual Yoga Challenge</li>
+                    <li><strong>July 10:</strong> Community 5K Run</li>
+                    <li><strong>July 22:</strong> HIIT Workshop</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Vitality Hub. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
